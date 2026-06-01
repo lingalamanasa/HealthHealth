@@ -1,0 +1,176 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:
+    linear-gradient(
+    135deg,
+    #e9f5ff,
+    #d8ecff,
+    #f7fbff);
+}
+
+/* Container */
+
+.container{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+}
+
+/* Card */
+
+.error-card{
+
+    width:650px;
+
+    background:white;
+
+    text-align:center;
+
+    padding:40px;
+
+    border-radius:25px;
+
+    box-shadow:
+    0 15px 40px rgba(0,0,0,.12);
+
+    animation:slideUp .8s ease;
+}
+
+/* Image */
+
+.image-box{
+
+    margin-bottom:20px;
+}
+
+.image-box img{
+
+    width:250px;
+    max-width:100%;
+}
+
+/* 404 */
+
+.error-card h1{
+
+    font-size:110px;
+
+    color:#0d1b3e;
+
+    line-height:1;
+}
+
+/* Heading */
+
+.error-card h2{
+
+    font-size:35px;
+
+    color:#0d1b3e;
+
+    margin:10px 0 15px;
+}
+
+/* Paragraph */
+
+.error-card p{
+
+    color:#6c757d;
+
+    line-height:1.8;
+
+    font-size:17px;
+
+    margin-bottom:30px;
+}
+
+/* Button */
+
+.home-btn{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    text-decoration:none;
+
+    padding:15px 35px;
+
+    border-radius:50px;
+
+    background:#19a7ff;
+
+    color:white;
+
+    font-weight:600;
+
+    transition:.4s;
+}
+
+.home-btn:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:
+    0 10px 20px rgba(25,167,255,.4);
+}
+
+/* Animation */
+
+@keyframes slideUp{
+
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.error-card{
+
+    width:100%;
+    padding:30px 20px;
+}
+
+.image-box img{
+
+    width:180px;
+}
+
+.error-card h1{
+
+    font-size:80px;
+}
+
+.error-card h2{
+
+    font-size:26px;
+}
+}
